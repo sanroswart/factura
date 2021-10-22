@@ -1,7 +1,7 @@
 # programa que calcula la factura de un item
 # you can change itbis (iva) as you like
 
-itbis = float(1.18)
+
 currency = input("currency: ")
 item = input("item: ")
 
@@ -17,7 +17,9 @@ print("it cost", price, currency, "each")
 subtotal = (quantity * price)
 print(subtotal, currency, "is the subtotal")
 
-print("itbis:", itbis)
+print("itbis: ", end="")
+itbis = float(input())
+print("your itbis % is:", itbis)
 
 calc = (subtotal * itbis)
 
